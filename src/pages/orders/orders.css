@@ -1,0 +1,66 @@
+.orders__page {
+  padding: 20px 0;
+}
+.orders__page h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #131921;
+}
+.orders__content {
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.order__card {
+  flex-basis: calc((100% - 20px) / 2);
+}
+.card__content {
+  column-gap: 10px;
+}
+.order__card h5 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.order__card li {
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+}
+.order__card p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+}
+.order__card span {
+  padding: 10px 20px;
+  margin: 0 0 10px;
+  display: block;
+  background-color: #ab1919;
+  width: fit-content;
+  color: #FFF;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 160px;
+  margin-left: auto;
+  text-align: center;
+}
+.order__card button {
+  padding: 10px 0;
+  border-radius: 4px;
+  background-color: #000;
+  color: #FFF;
+  width: 160px;
+  margin-left: auto;
+  text-align: center;
+  margin-bottom: 10px;
+  display: block;
+}
+.order__card button:not(:first-of-type) {
+  background-color: #d97d17;
+}
+.order__card button:last-of-type {
+  margin-bottom: 0;
+  background-color: #5a8914;
+}

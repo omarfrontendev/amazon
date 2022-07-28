@@ -1,0 +1,117 @@
+.product__page {
+  padding: 20px 0;
+}
+.product__content{ 
+  gap: 40px;
+}
+.right__product__col {
+  flex: 1.5;
+}
+.left__product__col {
+  flex: 1;
+}
+.images__container,
+.product__image {
+  gap: 10px;
+}
+.main__img {
+  width: 100%;
+  height: 300px;
+  background-color: #FFF;
+  border: 4px;
+  padding: 10px;
+}
+.main__img img {
+  height: 100%;
+  width: fit-content;
+  margin: 0 auto;
+}
+.images__container {
+  width: 100%;
+  overflow: hidden;
+}
+.images__container > div {
+  flex: 1;
+  height: 100px;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #FFF;
+  cursor: pointer;
+}
+.images__container img {
+  height: 100%;
+  object-fit: contain;
+}
+.right__product__col h2 {
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  color: #131921;
+  margin-bottom: 20px;
+}
+.right__product__col span {
+  font-weight: 600;
+  font-size: 44px;
+  color: #f38c19;
+}
+.right__product__col p {
+  margin: 20px 0 0;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #555;
+}
+.right__product__col button {
+  margin: 20px 0 0;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+  background-color: #f79b34;
+  font-size: 24px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 500;
+}
+.right__product__col .rating__container {
+  font-size: 30px;
+  margin-bottom: 14px;
+}
+.product__page h3 {
+  margin: 80px 0 20px;
+  font-size: 26px;
+  font-weight: 500;
+}
+.product__page .realtied__products {
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.product__page .realtied__products .card {
+  flex-basis: calc((100% - 40px) / 3);
+  cursor: pointer;
+}
+.product__page .realtied__products .related__project {
+  gap: 20px;
+}
+.product__page .realtied__products .related__project .image__ {
+  width: 100%;
+  height: 200px;
+}
+.product__page .related__project img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+@media(max-width: 991px) {
+  .product__content {
+    flex-direction: column-reverse;
+  }
+  .left__product__col {
+    width: 100%;
+  }
+}
+@media(max-width: 767px) {
+  .product__page .realtied__products .card {
+    flex-basis: calc((100% - 20px) / 2);
+  }
+}

@@ -1,0 +1,24 @@
+footer {
+  background-color: #131A22;
+}
+.footer__logo {
+  padding: 40px 0;
+  background-color: #232F3E;
+}
+.footer__logo img {
+  width: 200px;
+  margin-bottom: -20px;
+}
+.footer__content {
+  column-gap: 40px;
+  padding: 20px 0;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.footer__content > div {
+  row-gap: 10px;
+}
+.footer__content a {
+  color: #ddd;
+  font-size: 14px;
+}
