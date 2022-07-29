@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom'
 import { CartContext } from '../../store/cart-context'
 import { signOut } from "firebase/auth";
 import { auth } from '../../firebase'
-
+import Logo from '../../assets/amazon_PNG11.png'
 
 import './header.css'
 
@@ -34,8 +34,8 @@ const Header = () => {
     <header className='header flex justify-center'>
       <div className="container flex justify-center">
         <nav className='nav flex space-between'>
-          <div className="logo" onClick={() => navigate('/')}>
-            <img src="/assets/amazon_PNG11.png" alt="" />
+          <div className="logo" onClick={() => navigate('/amazon')}>
+            <img src={Logo} alt="Logo" />
           </div>
           <div className="search-input flex">
             <input type="text" name="search" id="search" placeholder='Search' />

@@ -19,7 +19,6 @@ const Login = () => {
     .then((data) => {
       ctx.setAuth(data.user);
       localStorage.setItem('auth', JSON.stringify(data.user));
-      // navigate('/')
       window.goBack();
       setPassword('');
       setEmail('');
@@ -35,7 +34,7 @@ const Login = () => {
     .then((data) => {
       ctx.setAuth(data.user);
       localStorage.setItem('auth', JSON.stringify(data.user));
-      navigate('/');
+      navigate('/amazon');
       setPassword('');
       setEmail('');
     })

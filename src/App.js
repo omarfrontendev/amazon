@@ -255,6 +255,7 @@ const App = () => {
       <Header />
       <Routes>
         <Route path='/' element={<Home products={DUMMY_PRODUCTS} />} />
+        <Route path='/amazon' element={<Home products={DUMMY_PRODUCTS} />} />
         <Route path='/cart' element={<Cart />} />
         <Route path='/login' element={<RequireAuth ><Login /></RequireAuth>} />
         <Route path='/payment' element={<RequireLogin><Payment /></RequireLogin>} />
